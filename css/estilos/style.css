@@ -1,0 +1,16 @@
+.fondo {
+    background-color: rgb(41, 41, 41);
+}
+.indice {
+    color: whitesmoke;
+    font-size: xx-large;
+    margin: 5%;
+}
+.columna {
+    border: 1px solid white;
+    color: white;
+}
+.columna img {
+    max-width: 100%;
+    height: auto;
+}
