@@ -1,8 +1,60 @@
+.navbar {
+    position: fixed; /* Posición fija */
+    top: 0; /* Colocar en la parte superior */
+    width: 100%; /* Ancho completo */
+    background-color: #333; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 0; /* Espaciado interno */
+    text-align: left; /* Texto a la izquierda*/
+    z-index: 1000; /* Índice z para asegurar que esté por encima de otros elementos */
+}
+.navbar a {
+    color: white; /* Color blanco para los enlaces */
+    text-decoration: none;
+    margin: 0 10px;
+}
 .indice {
     background-color: rgba(36, 36, 36, 0.5);
+    font-size: xx-large;
+    color: white;
+}
+.indice2 {
+    margin-top: 2%;
+    background-color: gray;
     font-size: xx-large;
     color: white;
 }
 body {
     background-color: black;
 }
+img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño en un 10% */
+    filter: brightness(70%); /* Aplica un sombreado */
+}
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid white; /* Agrega un borde blanco alrededor de los campos */
+  background-color: transparent; /* Hace que los campos sean transparentes */
+  color: white; /* Cambia el color del texto a blanco */
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; /* Cambia el color de fondo del botón */
+  color: white; /* Cambia el color del texto del botón a blanco */
+  border: none;
+  cursor: pointer;
+}
+form {
+    background-color: transparent; /* Hace que el formulario sea transparente */
+    border: 2px solid white; /* Agrega un borde blanco alrededor del formulario */
+    padding: 20px;
+  }
+  
+form div {
+    margin-bottom: 20px;
+}
+

@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilos/styletk.css">
     <link rel="stylesheet" href="../css/flexbox grid/flexboxgrid-6.3.1/css/flexboxgrid.min.css" type="text/css">
+    <script src="sctk/script.js"></script>
     <title>Document</title>
 </head>
+
 <body>
+    <div class="row center-xs">
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <!--Barra de navegacion-->
+            <div class="navbar">
+                <a href="../index.htm">COMBOMAKER</a>
+                <!-- Enlace principal -->
+                <a href="#" class="enlace-principal" onclick="toggleEnlaces()">Mostrar Enlaces</a>
+                <!-- Enlaces adicionales -->
+                <div class="enlacesadicionales" id="enlaces-adicionales">
+                    <!-- Agregar el ID "enlaces-adicionales" aquí -->
+                    <a href="#">Enlace 1</a>
+                    <a href="../juegos/tk.html">Tekken</a>
+                    <a href="#">Enlace 3</a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </div>
     <!--Lista de personajes-->
     <div class="row center-xs">
         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
@@ -50,9 +75,38 @@
                     <img src="imgtk/zafina.png">
                 </div>
             </div>
+        </div><br>
+    </div>
+    <!--Formulario para la creación de combos-->
+    <div class="row center-xs">
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <div class="indice2">
+                INPUT LIST
+            </div>
+            <div class="formulario">
+                <form action="#" method="post">
+                    <div>
+                        <label for="personaje">Character:</label>
+                        <input type="text" id="personaje" name="personaje" required>
+                    </div>
+                    <div>
+                        <label for="dificultad">Difficulty:</label>
+                        <select id="dificultad" name="dificultad" required>
+                            <option value="">Select difficulty</option>
+                            <option value="facil">Easy</option>
+                            <option value="medio">Medium</option>
+                            <option value="dificil">Hard</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-    <!--Despliegue de personaje y sus combos-->
+
 
 </body>
+
 </html>
