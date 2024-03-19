@@ -1,3 +1,39 @@
+nav {
+    background-color: gray;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    color:white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+nav a:hover {
+    filter: brightness(70%); 
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: green;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    margin-bottom: 5px;
+}
 .navbar {
     position: fixed; /* Posición fija */
     top: 0; /* Colocar en la parte superior */
@@ -12,7 +48,7 @@
     color: white; /* Color blanco para los enlaces */
     text-decoration: none;
     margin: 0 10px;
-}
+} 
 .indice {
     background-color: rgba(36, 36, 36, 0.5);
     font-size: xx-large;
