@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'tkfont';
+    src: url('css/fonts/tekken_6_font_by_prinzkoks-d54nzev.ttf') format('truetype');
+}
+
+.indexchars img {
+    width: calc(10% - 20px);
+    /* Calculate width for 10 images per line with some spacing */
+    margin: 10px;
+    /* Add spacing between images */
+    border: 2px solid rgb(63, 63, 63);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .indexchars img {
+        width: calc(20% - 20px);
+        /* Adjust width for smaller screens */
+    }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+    .indexchars img {
+        width: calc(30% - 20px);
+        /* Adjust width for even smaller screens */
+    }
+}
+
+body {
+    font-family: 'tkfont', sans-serif;
+    font-weight: bold;
+}
+
+nav {
+    background-color: gray;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; /* Align items with space between them */
+    align-items: center;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    filter: brightness(70%);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    border: 2px white;
+    display: none;
+    position: absolute;
+    background-color: gray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    margin-bottom: 5px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: left;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: rgb(63, 63, 63);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.index {
+    margin-top: 2%;
+    background-color: rgba(36, 36, 36, 0.5);
+    border: 2px solid rgb(63, 63, 63);
+    font-size: xx-large;
+    color: white;
+}
+
+.indexchars {
+    background-color: rgba(36, 36, 36, 0.5);
+    border: 2px solid rgb(63, 63, 63);
+    border-top: none;
+    font-size: xx-large;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.index2 {
+    margin-top: 2%;
+    border: 2px solid rgb(63, 63, 63);
+    background-color: rgba(36, 36, 36, 0.5);
+    font-size: xx-large;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    background-color: black;
+}
+
+img:hover {
+    transform: scale(1.1);
+    filter: brightness(70%);
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(63, 63, 63);
+    background-color: transparent;
+    color: white;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form {
+    background-color: transparent;
+    border: 2px solid rgb(63, 63, 63);
+    padding: 20px;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+.inputsdiv img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.add-combo-text {
+    flex-grow: 1;
+    /* Allow the text to expand to fill the space */
+    text-align: center;
+    /* Center the text horizontally */
+}

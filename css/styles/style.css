@@ -1,0 +1,26 @@
+.background {
+    background-color:black;
+}
+.row {
+    align-items: stretch;
+}
+.index {
+    color: whitesmoke;
+    font-size: xx-large;
+    margin: 5%;
+    border: 2px solid rgb(63, 63, 63);
+}
+.column {
+    color: white;
+    margin: 0 auto;
+}
+.column img {
+    max-width: 80%;
+    align-items: center;
+    height: auto;
+    border: 2px solid rgb(63, 63, 63);
+}
+.columnfaq {
+    color: white;
+    justify-content: center;
+}

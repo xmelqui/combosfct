@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles/styletk.css">
+    <link rel="stylesheet" href="../css/flexbox grid/flexboxgrid-6.3.1/css/flexboxgrid.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/navbar css/cssmenu.css">
+    <script src="sctk/script.js"></script>
+    <title>COMBOMAKER</title>
+</head>
+
+<body>
+    <div class="row center-xs">
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <!--
+            <nav>
+                <ul>
+                    <li><a href="../index.htm" style="font-size: x-large;">COMBOMAKER</a></li>
+                    <li class="dropdown"><a href="#">GAMES</a>
+                        <div class="dropdown-content">
+                            <a href="../juegos/gg.html">GG:ST</a>
+                            <a href="../juegos/tk.html">TEKKEN</a>
+                            <a href="../juegos/sf.html">SFVI</a>
+                        </div>
+                    </li>
+                    <li><a href="#">HOME</a></li>
+                </ul>
+            </nav>
+            -->
+            <!--start CssMenu-->
+            <div id="cssmenu">
+                <ul>
+                    <li><a href="../index.htm">COMBOMAKER</a></li>
+                    <li>
+                        <span>GAMES <i class="arrow"></i></span>
+                        <ul class="dropdown">
+                            <li><a href="#">Guilty Gear Strive</a></li>
+                            <li><a href="#">Tekken 8</a></li>
+                            <li><a href="#">Street Fighter VI</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--end CssMenu-->
+        </div>
+    </div>
+    <!--Character list-->
+    <div class="row center-xs">
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <div class="index">
+                CHARACTER LIST
+            </div>
+            <div class="col-xs 12 col-sm-12 col-md-12 col-lg-12">
+                <div class="indexchars">
+                    <img src="imgtk/alisa.png">
+                    <img src="imgtk/asuka.png">
+                    <img src="imgtk/azucena.png">
+                    <img src="imgtk/bryan.png">
+                    <img src="imgtk/claudio.png">
+                    <img src="imgtk/deviljin.png">
+                    <img src="imgtk/dragunov.png">
+                    <img src="imgtk/feng.png">
+                    <img src="imgtk/hwoarang.png">
+                    <img src="imgtk/jack8.png">
+                    <img src="imgtk/jin.png">
+                    <img src="imgtk/jun.png">
+                    <img src="imgtk/kazuya.png">
+                    <img src="imgtk/king.png">
+                    <img src="imgtk/kuma.png">
+                    <img src="imgtk/lars.png">
+                    <img src="imgtk/law.png">
+                    <img src="imgtk/lee.png">
+                    <img src="imgtk/leo.png">
+                    <img src="imgtk/leroy.png">
+                    <img src="imgtk/lili.png">
+                    <img src="imgtk/ling.png">
+                    <img src="imgtk/nina.png">
+                    <img src="imgtk/panda.png">
+                    <img src="imgtk/paul.png">
+                    <img src="imgtk/raven.png">
+                    <img src="imgtk/reina.png">
+                    <img src="imgtk/shaheen.png">
+                    <img src="imgtk/steve.png">
+                    <img src="imgtk/victor.png">
+                    <img src="imgtk/yoshimistu.png">
+                    <img src="imgtk/zafina.png">
+                </div>
+            </div>
+        </div><br>
+    </div>
+    <!--Combo form-->
+    <div class="row center-xs">
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <div class="index2">
+                <span class="add-combo-text">ADD YOUR COMBO</span><button onclick="toggleForm()"><img src="inputstk/dh.png" style="width: 20px; height: 20px; margin-right: 20%;"></button>
+            </div>
+            <div class="formulario" id="comboForm" style="display: none;">
+                <form action="#" method="post">
+                    <!-- Choosing character-->
+                    <div>
+                        <label for="character">Character:</label>
+                        <select id="characternewcombo" name="charactername" required>
+                            <option value="">Select Character</option>
+                            <option value="alisa">Alisa</option>
+                            <option value="asuka">Asuka</option>
+                            <option value="azucena">Azucena</option>
+                            <option value="bryan">Bryan</option>
+                            <option value="claudio">Claudio</option>
+                            <option value="deviljin">DevilJin</option>
+                            <option value="dragunov">Dragunov</option>
+                            <option value="feng">Feng</option>
+                            <option value="hwoarang">Hwoarang</option>
+                            <option value="jack8">Jack-8</option>
+                            <option value="jin">Jin</option>
+                            <option value="jun">Jun</option>
+                            <option value="kazuya">Kazuya</option>
+                            <option value="king">King</option>
+                            <option value="kuma">Kuma</option>
+                            <option value="lars">Lars</option>
+                            <option value="law">Law</option>
+                            <option value="lee">Lee</option>
+                            <option value="leo">Leo</option>
+                            <option value="leroy">Leroy</option>
+                            <option value="lili">Lili</option>
+                            <option value="ling">Ling</option>
+                            <option value="nina">Nina</option>
+                            <option value="panda">Panda</option>
+                            <option value="paul">Paul</option>
+                            <option value="raven">Raven</option>
+                            <option value="reina">Reina</option>
+                            <option value="shaheen">Shaheen</option>
+                            <option value="steve">Steve</option>
+                            <option value="victor">Victor</option>
+                            <option value="yoshimistu">Yoshimitsu</option>
+                            <option value="zafina">Zafina</option>
+                        </select>
+                    </div>
+                    <!-- Difficulty settings -->
+                    <div>
+                        <label for="difficulty">Difficulty:</label>
+                        <select id="difficulty" name="difficulty" required>
+                            <option value="">Select difficulty</option>
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </div>
+                    <!-- Combo creation -->
+                    <div class="inputsdiv" onclick="moveArrow(event)">
+                        <img src="inputstk/1.png" class="arrow" data-value="1">
+                        <img src="inputstk/12.png" class="arrow" data-value="1,2">
+                        <img src="inputstk/123.png" class="arrow" data-value="1,2,3">
+                        <img src="inputstk/1234.png" class="arrow" data-value="1,2,3,4">
+                        <img src="inputstk/124.png">
+                        <img src="inputstk/13.png">
+                        <img src="inputstk/134.png">
+                        <img src="inputstk/14.png">
+                        <img src="inputstk/2.png">
+                        <img src="inputstk/23.png">
+                        <img src="inputstk/234.png">
+                        <img src="inputstk/24.png">
+                        <img src="inputstk/3.png">
+                        <img src="inputstk/34.png">
+                        <img src="inputstk/4.png">
+                        <img src="inputstk/df.png">
+                        <img src="inputstk/d.png">
+                        <img src="inputstk/db.png">
+                        <img src="inputstk/b.png">
+                        <img src="inputstk/ub.png">
+                        <img src="inputstk/u.png">
+                        <img src="inputstk/uf.png">
+                        <img src="inputstk/dfh.png">
+                        <img src="inputstk/dh.png">
+                        <img src="inputstk/dbh.png">
+                        <img src="inputstk/bh.png">
+                        <img src="inputstk/ubh.png">
+                        <img src="inputstk/uh.png">
+                        <img src="inputstk/ufh.png">
+                        <img src="inputstk/WR.png">
+                        <img src="inputstk/ws.png">
+                        <img src="inputstk/DASH.png">
+                    </div>
+                    <!-- Upload combo/Save image -->
+                    <div>
+                        <button type="submit">Upload combo</button>
+                        <button type="submit">Save image</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
