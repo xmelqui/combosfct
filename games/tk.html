@@ -36,9 +36,9 @@
                     <li>
                         <span>GAMES <i class="arrow"></i></span>
                         <ul class="dropdown">
-                            <li><a href="#">Guilty Gear Strive</a></li>
-                            <li><a href="#">Tekken 8</a></li>
-                            <li><a href="#">Street Fighter VI</a></li>
+                            <li><a href="../games/gg.html">Guilty Gear Strive</a></li>
+                            <li><a href="../games/tk.html">Tekken 8</a></li>
+                            <li><a href="../games/sf.html">Street Fighter VI</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -94,7 +94,8 @@
     <div class="row center-xs">
         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
             <div class="index2">
-                <span class="add-combo-text">ADD YOUR COMBO</span><button onclick="toggleForm()"><img src="inputstk/dh.png" style="width: 20px; height: 20px; margin-right: 20%;"></button>
+                <span class="add-combo-text" onclick="toggleForm(event)" style="cursor: pointer;">ADD YOUR COMBO</span><button onclick="toggleForm()"><img
+                        src="inputstk/dh.png" style="width: 20px; height: 20px; margin-right: 20%;"></button>
             </div>
             <div class="formulario" id="comboForm" style="display: none;">
                 <form action="#" method="post">
@@ -192,4 +193,5 @@
         </div>
     </div>
 </body>
+
 </html>
