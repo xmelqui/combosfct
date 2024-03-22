@@ -7,14 +7,43 @@
     <title>COMBOMAKER</title>
     <link rel="stylesheet" href="css/styles/style.css">
     <link rel="stylesheet" href="css/flexbox grid/flexboxgrid-6.3.1/css/flexboxgrid.min.css" type="text/css">
+    <script src="games/sctk/script.js"></script>
 </head>
-
 <body class="background">
     <!--Website name-->
     <div class="row center-xs">
-        <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
             <div class="index">
-                LOGO GOES HERE
+                <h2>COMBOMAKER</h2>
+            </div>
+        </div>
+    </div>
+    <!--Small intro-->
+    <div class="row center-xs">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="column">
+                <h1><br>Your games, your combos</h1>
+                <h2>Every combo from the most popular fighting games on the same website ready for you to view or make
+                    your own!</h2>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="column">
+                <h1>Share your combos</h1>
+                <h2>Not only you can upload your own combos to our database and view them later, you can also download
+                    them as an image file for your own use.</h2>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="column">
+                <h1><br>Discover new combos</h1>
+                <h2>Explore a vast collection of combos shared by other users. Learn new techniques and improve your
+                    gameplay.</h2>
+            </div>
+        </div>
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            <div class="column">
+                <h1>- GET STARTED -<br>CHOOSE YOUR GAME</h1>
             </div>
         </div>
     </div>
@@ -37,12 +66,14 @@
         </div>
         <!--Website Information-->
         <div class="columnfaq">
-            <span style="font-size: xx-large;"><br>FAQ</span><br><br>
-            <span style="font-weight: bolder">What is COMBOMAKER?</span> <br><br>
-            Combomaker is a database where you can upload your own combos and watch the existing ones for each
-            character!<br><br>
-            <span style="font-weight: bolder">Can i download my combo?</span><br><br>
-            Yes, you can just click on download and you will get a .png with your custom combo.<br>
+            <span style="font-size: xx-large;cursor: pointer;" onclick="toggleForm(event)"><br>FAQ ⬇</span><br><br>
+            <div id="comboForm" style="display: none;">
+                <span style="font-weight: bolder">What is COMBOMAKER?</span> <br><br>
+                Combomaker is a database where you can upload your own combos and watch the existing ones for each
+                character!<br><br>
+                <span style="font-weight: bolder">Can i download my combo?</span><br><br>
+                Yes, you can just click on download and you will get a .png with your custom combo.<br>
+            </div>
         </div>
     </div>
 </body>

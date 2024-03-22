@@ -1,37 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos/stylesf.css">
+    <link rel="stylesheet" href="../css/styles/styletk.css">
     <link rel="stylesheet" href="../css/flexbox grid/flexboxgrid-6.3.1/css/flexboxgrid.min.css" type="text/css">
     <link rel="stylesheet" href="../css/navbar css/cssmenu.css">
-    <title>Document</title>
+    <script src="sctk/script.js"></script>
+    <title>COMBOMAKER</title>
 </head>
+
 <body>
-    <!--Navbar-->
-    <div id="cssmenu">
-        <ul>
-            <li><a href="../index.htm">COMBOMAKER</a></li>
-            <li>
-                <span>GAMES <i class="arrow"></i></span>
-                <ul class="dropdown">
-                    <li><a href="#">Guilty Gear Strive</a></li>
-                    <li><a href="#">Tekken 8</a></li>
-                    <li><a href="#">Street Fighter VI</a></li>
+    <div class="row center-xs">
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <!--
+            <nav>
+                <ul>
+                    <li><a href="../index.htm" style="font-size: x-large;">COMBOMAKER</a></li>
+                    <li class="dropdown"><a href="#">GAMES</a>
+                        <div class="dropdown-content">
+                            <a href="../juegos/gg.html">GG:ST</a>
+                            <a href="../juegos/tk.html">TEKKEN</a>
+                            <a href="../juegos/sf.html">SFVI</a>
+                        </div>
+                    </li>
+                    <li><a href="#">HOME</a></li>
                 </ul>
-            </li>
-        </ul>
+            </nav>
+            -->
+            <!--start CssMenu-->
+            <div id="cssmenu">
+                <ul>
+                    <li><a href="../index.htm">COMBOMAKER</a></li>
+                    <li>
+                        <span>GAMES <i class="arrow"></i></span>
+                        <ul class="dropdown">
+                            <li><a href="../games/gg.html">Guilty Gear Strive</a></li>
+                            <li><a href="../games/tk.html">Tekken 8</a></li>
+                            <li><a href="../games/sf.html">Street Fighter VI</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--end CssMenu-->
+        </div>
     </div>
     <!--Character list-->
     <div class="row center-xs">
         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-            <div class="indexchars">
+            <div class="index">
                 CHARACTER LIST
+            </div>
+            <div class="col-xs 12 col-sm-12 col-md-12 col-lg-12">
+                <div class="indexchars">
+                    <img src="imgsf/aki.png">
+                    <img src="imgsf/blanka.png">
+                    <img src="imgsf/cammy.png">
+                    <img src="imgsf/chunli.png">
+                    <img src="imgsf/deejay.png">
+                    <img src="imgsf/dhalsim.png">
+                    <img src="imgsf/ed.png">
+                    <img src="imgsf/ehonda.png">
+                    <img src="imgsf/guile.png">
+                    <img src="imgsf/jamie.png">
+                    <img src="imgsf/jp.png">
+                    <img src="imgsf/juri.png">
+                    <img src="imgsf/ken.png">
+                    <img src="imgsf/kimberly.png">
+                    <img src="imgsf/lily.png">
+                    <img src="imgsf/luke.png">
+                    <img src="imgsf/manon.png">
+                    <img src="imgsf/marisa.png">
+                    <img src="imgsf/rashid.png">
+                    <img src="imgsf/ryu.png">
+                    <img src="imgsf/zangief.png">
+                </div>
+            </div>
+        </div><br>
+    </div>
+    <!--Combo form-->
+    <div class="row center-xs">
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <div class="index2">
+                <span class="add-combo-text" onclick="toggleForm(event)" style="cursor: pointer;">ADD YOUR COMBO <img
+                        src="inputssf/plus.png" style="max-width: 25px; max-height: 25px;">
+            </div>
+            <div class="formulario" id="comboForm" style="display: none;">
+                <form action="#" method="post">
+                    <!-- Choosing character-->
+                    <div>
+                        <label for="character">Character:</label>
+                        <select id="characternewcombo" name="charactername" required>
+                            <option value="">Select Character</option>
+                            <option value="aki">A.K.I</option>
+                            <option value="blanka">Blanka</option>
+                            <option value="cammy">Cammy</option>
+                            <option value="chunli">Chun-Li</option>
+                            <option value="deejay">Dee Jay</option>
+                            <option value="dhalsim">Dhalsim</option>
+                            <option value="ed">Ed</option>
+                            <option value="ehonda">E.Honda</option>
+                            <option value="guile">Guile</option>
+                            <option value="jamie">Jamie</option>
+                            <option value="jp">JP</option>
+                            <option value="juri">Juri</option>
+                            <option value="ken">Ken</option>
+                            <option value="kimberly">Kimberly</option>
+                            <option value="lily">Lily</option>
+                            <option value="luke">Luke</option>
+                            <option value="manon">Manon</option>
+                            <option value="marisa">Marisa</option>
+                            <option value="rashid">Rashid</option>
+                            <option value="ryu">Ryu</option>
+                            <option value="zangief">Zangief</option>
+                        </select>
+                    </div>
+                    <!-- Difficulty settings -->
+                    <div>
+                        <label for="difficulty">Difficulty:</label>
+                        <select id="difficulty" name="difficulty" required>
+                            <option value="">Select difficulty</option>
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </div>
+                    <!--Combo Inputs-->
+                    <div class="divforinputs">
+                        
+                    </div>
+                    <!-- Combo creation -->
+                    <div class="inputsdiv" onclick="moveArrow(event)">
+                        <img src="inputssf/any_kick.png">
+                        <img src="inputssf/any_punch.png">
+                        <img src="inputssf/button_block.png">
+                        <img src="inputssf/hcb.png">
+                        <img src="inputssf/heavy_kick.png">
+                        <img src="inputssf/heavy_punch.png">
+                        <img src="inputssf/kick_2x.png">
+                        <img src="inputssf/light_kick.png">
+                        <img src="inputssf/light_punch.png">
+                        <img src="inputssf/medium_kick.png">
+                        <img src="inputssf/medium_punch.png">
+                        <img src="inputssf/motion_crouch.png">
+                        <img src="inputssf/motion_down.png">
+                        <img src="inputssf/motion_downleft.png">
+                        <img src="inputssf/motion_left.png">
+                        <img src="inputssf/motion_neutral_jump.png">
+                        <img src="inputssf/motion_right.png">
+                        <img src="inputssf/plus.png">
+                        <img src="inputssf/punch_2x.png">
+                        <img src="inputssf/qcf.png">
+                        <br>
+                        <!-- Upload combo/Save image -->
+                        <div>
+                            <button type="submit">Upload combo</button>
+                            <button type="submit">Save image</button>
+                        </div>
+                </form>
             </div>
         </div>
     </div>
-    <!--Combos-->
-    
 </body>
 </html>

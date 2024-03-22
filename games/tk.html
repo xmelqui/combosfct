@@ -14,21 +14,6 @@
 <body>
     <div class="row center-xs">
         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-            <!--
-            <nav>
-                <ul>
-                    <li><a href="../index.htm" style="font-size: x-large;">COMBOMAKER</a></li>
-                    <li class="dropdown"><a href="#">GAMES</a>
-                        <div class="dropdown-content">
-                            <a href="../juegos/gg.html">GG:ST</a>
-                            <a href="../juegos/tk.html">TEKKEN</a>
-                            <a href="../juegos/sf.html">SFVI</a>
-                        </div>
-                    </li>
-                    <li><a href="#">HOME</a></li>
-                </ul>
-            </nav>
-            -->
             <!--start CssMenu-->
             <div id="cssmenu">
                 <ul>
@@ -94,8 +79,7 @@
     <div class="row center-xs">
         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
             <div class="index2">
-                <span class="add-combo-text" onclick="toggleForm(event)" style="cursor: pointer;">ADD YOUR COMBO</span><button onclick="toggleForm()"><img
-                        src="inputstk/dh.png" style="width: 20px; height: 20px; margin-right: 20%;"></button>
+                <span class="add-combo-text" onclick="toggleForm(event)" style="cursor: pointer;">ADD YOUR COMBO        <img src="inputssf/plus.png" style="max-width: 25px; max-height: 25px;">
             </div>
             <div class="formulario" id="comboForm" style="display: none;">
                 <form action="#" method="post">
@@ -148,6 +132,10 @@
                             <option value="hard">Hard</option>
                         </select>
                     </div>
+                    <!--Combo Inputs-->
+                    <div class="divforinputs">
+
+                    </div>
                     <!-- Combo creation -->
                     <div class="inputsdiv" onclick="moveArrow(event)">
                         <img src="inputstk/1.png" class="arrow" data-value="1">
@@ -182,6 +170,7 @@
                         <img src="inputstk/WR.png">
                         <img src="inputstk/ws.png">
                         <img src="inputstk/DASH.png">
+                        <br>
                     </div>
                     <!-- Upload combo/Save image -->
                     <div>
